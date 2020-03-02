@@ -50,7 +50,7 @@ function Cart({ cart, total, removeFromCart, updateAmount }) {
                   <button type="button" onClick={() => decrement(product)}>
                     <MdRemoveCircleOutline size={20} color="#7159c1" />
                   </button>
-                  <input type="number" readOnly value={2} />
+                  <input type="text" readOnly value={product.amount} />
                   <button type="button" onClick={() => increment(product)}>
                     <MdAddCircleOutline size={20} color="#7159c1" />
                   </button>
